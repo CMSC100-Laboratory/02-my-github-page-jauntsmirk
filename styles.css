@@ -1,0 +1,53 @@
+/* ============================================
+   Mushroom Color Palette for Reference
+   Color Palette from Image:
+   - Beige: #E8DCC8
+   - Tan: #D4B896
+   - Red: #A94442
+   - Dark Purple: #3D3744
+   - Deep Teal: #2C5F5D
+   - Sage Green: #7FA498
+   ============================================= */
+
+/* Reset default browser styles for consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Enable smooth scrolling for anchor navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Centers content and limits width for readability */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ============================================
+   MUSHROOM CAP - STICKY NAVIGATION
+   ============================================ */
+
+.mushroom-cap {
+    top: 0;
+    background: #A94442;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
