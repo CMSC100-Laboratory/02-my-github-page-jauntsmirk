@@ -12,3 +12,6 @@
 ## Key takeaways from this exercise
 It came to me that my htms and css knowledge has become rusty from the short time that I have not used it. 
 I also realized how important truly knowing Git and Github is in CMSC 100 because this is where every exercise and project and be built upon. 
+
+## References
+https://docs.google.com/document/d/1-d3g4ceQohivcLKUzIhIXzC1qltlLhNXA_7DvGWmxw0/edit?usp=sharing
