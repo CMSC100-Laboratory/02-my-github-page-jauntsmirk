@@ -39,6 +39,7 @@ body {
    MUSHROOM CAP - STICKY NAVIGATION
    ============================================ */
 
+/* Mushroom-inspired navigation bar*/
 .mushroom-cap {
     top: 0;
     background: #A94442;
@@ -61,4 +62,45 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     padding: 8px 16px;
     border-radius: 20px;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    background: linear-gradient(180deg, #E8DCC8 0%, #D4B896 100%);
+    padding: 120px 40px 100px;
+    text-align: center;
+}
+
+/* ============================================
+   GILLS SECTION - About
+   ============================================ */
+.gills {
+    background: linear-gradient(180deg, #D4B896 0%, #C4A882 50%, #B49870 100%);
+    padding: 100px 40px;
+}
+
+/* ============================================
+   STEM SECTION - Skills
+   ============================================ */
+.stem {
+    background: linear-gradient(180deg, #B49870 0%, #A94442 50%, #8B3634 100%);
+    padding: 100px 40px;
+}
+
+/* ============================================
+   MYCELIUM SECTION - Projects
+   ============================================ */
+.mycelium {
+    background: linear-gradient(180deg, #3D3744 0%, #2C5F5D 50%, #1F4644 100%);
+    padding: 100px 40px;
+}
+
+/* ============================================
+   FOOTER - Contact
+   ============================================ */
+.footer {
+    background: linear-gradient(180deg, #1F4644 0%, #7FA498 100%);
+    padding: 80px 40px 40px;
 }
