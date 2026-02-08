@@ -1,5 +1,5 @@
-**Mark Justin C. Feliciano**
-**BS Computer Science**
+**Mark Justin C. Feliciano**  
+**BS Computer Science**  
 [Live Website Link](https://cmsc100-laboratory.github.io/02-my-github-page-jauntsmirk/)
 
 ## Steps on how to create Github Page
