@@ -67,6 +67,7 @@ body {
 /* ============================================
    HERO SECTION
    ============================================ */
+
 .hero {
     background: linear-gradient(180deg, #E8DCC8 0%, #D4B896 100%);
     padding: 120px 40px 100px;
@@ -79,8 +80,8 @@ body {
 }
 
 .featured-photo {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 6px solid white;
@@ -104,9 +105,32 @@ body {
 /* ============================================
    GILLS SECTION - About
    ============================================ */
+
 .gills {
     background: linear-gradient(180deg, #D4B896 0%, #C4A882 50%, #B49870 100%);
     padding: 100px 40px;
+}
+
+.gills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3D3744;
+}
+
+.gills-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.gills-content p {
+    font-size: 1.15rem;
+    color: #3D3744;
+    margin-bottom: 25px;
+    line-height: 1.8;
 }
 
 /* ============================================
