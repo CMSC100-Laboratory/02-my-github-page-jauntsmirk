@@ -115,6 +115,9 @@ body {
     text-align: center;
     font-size: 2.5rem;
     color: #3D3744;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .gills-content {
@@ -146,6 +149,7 @@ body {
     font-size: 2.5rem;
     color: white;
     margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
 .skills-grid {
@@ -199,6 +203,7 @@ body {
     color: #7FA498;
     margin-bottom: 60px;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .projects-grid {
@@ -269,6 +274,7 @@ body {
     font-size: 2.5rem;
     color: white;
     margin-bottom: 40px;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
@@ -280,4 +286,11 @@ body {
     color: #E8DCC8;
     font-size: 1.2rem;
     margin-bottom: 15px;
+}
+
+/* ============================================
+   SMOOTH SCROLL ENHANCEMENTS
+   ============================================ */
+section { /* removed in main temporarily */
+    scroll-margin-top: 80px;
 }
