@@ -10,87 +10,91 @@
 </head>
 
 <body>
+    <!-- Wrapper to contain sticky navigation behavior -->
+    <div class="sticky-container">
+        <!-- MUSHROOM CAP - Sticky Navigation -->
+        <nav class="mushroom-cap" id="cap">
+            <div class="cap-spots"></div> <!-- Plan to add white spots on nav bar -->
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gills">About</a></li>
+                <li><a href="#stem">Skills</a></li>
+                <li><a href="#mycelium">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- MUSHROOM CAP - Sticky Navigation -->
-    <nav class="mushroom-cap" id="cap">
-        <div class="cap-spots"></div> <!-- Plan to add white spots on nav bar -->
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#gills">About</a></li>
-            <li><a href="#stem">Skills</a></li>
-            <li><a href="#mycelium">Projects</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <img src="assets/featured-photo.png" alt="Featured Photo" class="featured-photo">
-            <h1>Mark Justin Feliciano</h1>
-            <p class="tagline">Frontend Software Engineer | Computer Science Graduate</p>
-        </div>
-    </section>
-
-    <!-- GILLS SECTION - About Me -->
-    <section class="gills" id="gills">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="gills-content">
-                <p>
-                    Hello there! I'm a passionate Computer Science graduate who loves creating beautiful, 
-                    functional web experiences. Throughout my career I have developed a strong foundation 
-                    in software engineering principles while specializing in modern web technologies. I 
-                    believe in writing clean, maintainable code and creating intuitive user experiences 
-                    that solve real-world problems.
-                </p>
-                <p>
-                    When I'm not coding, you can find me exploring new design trends, contributing to 
-                    open-source projects, or experimenting with creative coding projects. I'm excited to 
-                    bring my skills and enthusiasm to Gugil Co. as a Frontend Software Engineer.
-                </p>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <img src="assets/featured-photo.png" alt="Featured Photo" class="featured-photo">
+                <h1>Mark Justin Feliciano</h1>
+                <p class="tagline">Frontend Software Engineer | Computer Science Graduate</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- STEM SECTION - Skills -->
-    <section class="stem" id="stem">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>Frontend: HTML5, CSS3, React.js</li>
-                        <li>Backend: Node.js, Express.js</li>
-                        <li>Database: MongoDB</li>
-                        <li>Git & Version Control</li>
-                    </ul>
+        <!-- GILLS SECTION - About Me -->
+        <section class="gills" id="gills">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="gills-content">
+                    <p>
+                        Hello there! I'm a passionate Computer Science graduate who loves creating beautiful, 
+                        functional web experiences. Throughout my career I have developed a strong foundation 
+                        in software engineering principles while specializing in modern web technologies. I 
+                        believe in writing clean, maintainable code and creating intuitive user experiences 
+                        that solve real-world problems.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new design trends, contributing to 
+                        open-source projects, or experimenting with creative coding projects. I'm excited to 
+                        bring my skills and enthusiasm to Gugil Co. as a Frontend Software Engineer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEM SECTION - Skills -->
+        <section class="stem" id="stem">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Frontend: HTML5, CSS3, React.js</li>
+                            <li>Backend: Node.js, Express.js</li>
+                            <li>Database: MongoDB</li>
+                            <li>Git & Version Control</li>
+                        </ul>
+                        </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>GitHub Pages</li>
+                            <li>Figma</li>
+                            <li>Chrome DevTools</li>
+                            <li>Command Line / Terminal</li>
+                        </ul>
                     </div>
 
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>GitHub Pages</li>
-                        <li>Figma</li>
-                        <li>Chrome DevTools</li>
-                        <li>Command Line / Terminal</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Time Management</li>
-                        <li>Technical Documentation</li>
-                    </ul>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Team Collaboration</li>
+                            <li>Time Management</li>
+                            <li>Technical Documentation</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    <!-- End of sticky-container - nav will disappear after this point -->
+
 
     <!-- MYCELIUM SECTION - Projects -->
     <section class="mycelium" id="mycelium">
