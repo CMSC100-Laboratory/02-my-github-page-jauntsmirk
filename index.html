@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <!-- Wrapper to contain sticky navigation behavior -->
+    <div class="sticky-container" id="cap">
+        <!-- MUSHROOM CAP - Sticky Navigation -->
+        <nav class="mushroom-cap">
+            <div class="cap-spots"></div> <!-- Plan to add white spots on nav bar -->
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gills">About</a></li>
+                <li><a href="#stem">Skills</a></li>
+                <li><a href="#mycelium">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <img src="assets/featured-photo.png" alt="Featured Photo" class="featured-photo">
+                <h1>Mark Justin Feliciano</h1>
+                <p class="tagline">Frontend Software Engineer | Computer Science Graduate</p>
+            </div>
+        </section>
+
+        <!-- GILLS SECTION - About Me -->
+        <section class="gills" id="gills">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="gills-content">
+                    <p>
+                        Hello there! I'm a passionate Computer Science graduate who loves creating beautiful, 
+                        functional web experiences. Throughout my career I have developed a strong foundation 
+                        in software engineering principles while specializing in modern web technologies. I 
+                        believe in writing clean, maintainable code and creating intuitive user experiences 
+                        that solve real-world problems.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new design trends, contributing to 
+                        open-source projects, or experimenting with creative coding projects. I'm excited to 
+                        bring my skills and enthusiasm to Gugil Co. as a Frontend Software Engineer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEM SECTION - Skills -->
+        <section class="stem" id="stem">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Frontend: HTML5, CSS3, React.js</li>
+                            <li>Backend: Node.js, Express.js</li>
+                            <li>Database: MongoDB</li>
+                            <li>Git & Version Control</li>
+                        </ul>
+                        </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>GitHub Pages</li>
+                            <li>Figma</li>
+                            <li>Chrome DevTools</li>
+                            <li>Command Line / Terminal</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Team Collaboration</li>
+                            <li>Time Management</li>
+                            <li>Technical Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End of sticky-container - nav will disappear after this point -->
+
+    <!-- MYCELIUM SECTION - Projects -->
+    <section class="mycelium" id="mycelium">
+        <div class="spores"></div>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/150_project.png" alt="Project One Screenshot">
+                    </div>
+                    <h3>Pollution Reduction Optimization Website</h3>
+                    <p class="project-tech">R Shiny, JavaScript, CSS</p>
+                    <p class="project-description">
+                        A web-based optimization tool built with R Shiny that computes 
+                        cost-efficient pollution reduction strategies under emission constraints.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/22_project.png" alt="Project Two Screenshot">
+                    </div>
+                    <h3>Cloud Cafe Information System</h3>
+                    <p class="project-tech">JavaFX, Figma, Git</p>
+                    <p class="project-description">
+                        A JavaFX-based cafe management system where I designed and implemented 
+                        user-friendly interfaces as the frontend developer.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/12_project.png" alt="Project Three Screenshot">
+                    </div>
+                    <h3>Strands-Inspired Python Game</h3>
+                    <p class="project-tech">Python, ASCII</p>
+                    <p class="project-description">
+                        A terminal-based word puzzle game in Python replicating the core 
+                        mechanics of NYT’s Strands.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/naga_hackathon.png" alt="Project Four Screenshot">
+                    </div>
+                    <h3>MyNagaApp Healthcare Module (Hackathon Proposal)</h3>
+                    <p class="project-tech">Figma, Canva</p>
+                    <p class="project-description">
+                        A Figma-designed healthcare module enabling residents to locate nearby 
+                        facilities, check service and medicine availability, and access emergency 
+                        assistance in real time.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER - Contact (outside sticky container) -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <h2>Let's Connect!</h2>
+        <div class="contact-info">
+            <p>📧 Email me at <a href="mailto:feliciano.mjc@gmail.com">feliciano.mjc@gmail.com</a></p>
+            <p>💼 <a href="https://www.linkedin.com/in/jauntsmirk/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            <p>🐙 <a href="https://www.github.com/jauntsmirk" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+        </div>
+        <a href="#cap" class="back-to-top">Back to Top 🍄</a>
+        
+        <div class="copyright">
+            <p>&copy; 2025 MJ Feliciano. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

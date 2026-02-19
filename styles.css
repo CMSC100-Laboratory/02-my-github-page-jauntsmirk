@@ -1,0 +1,467 @@
+/* ============================================
+   Mushroom Color Palette for Reference
+   Color Palette from Image:
+   - Beige: #E8DCC8
+   - Tan: #D4B896
+   - Red: #A94442
+   - Dark Purple: #3D3744
+   - Deep Teal: #2C5F5D
+   - Sage Green: #7FA498
+   ============================================= */
+
+/* Reset default browser styles for consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Enable smooth scrolling for anchor navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Centers content and limits width for readability */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ============================================
+   MUSHROOM CAP - STICKY NAVIGATION
+   ============================================ */
+
+/* Wrapper to contain sticky behavior - stops before footer */
+body {
+    position: relative;
+}
+
+/* Mushroom-inspired navigation bar*/
+.mushroom-cap {
+    position: sticky;
+    top: 0;
+    background: #A94442;
+    z-index: 1000;
+    padding: 25px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 50% 50% / 0 0 40px 40px;
+    width: 100%;
+    overflow: visible;
+}
+
+/* Decorative white spots on the cap */
+.cap-spots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 0 0 50% 50% / 0 0 40px 40px;
+}
+
+.cap-spots::before,
+.cap-spots::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Creating multiple white spots using pseudo-elements and background */
+.cap-spots::before {
+    width: 18px;
+    height: 18px;
+    top: 25%;
+    left: 12%;
+    box-shadow: 
+        150px 15px 0 -2px white,
+        320px -5px 0 -4px white,
+        480px 20px 0 0px white,
+        620px 10px 0 -3px white,
+        780px 5px 0 -1px white,
+        920px 18px 0 -2px white,
+        1050px 8px 0 -5px white,
+        240px 22px 0 -6px rgba(255, 255, 255, 0.8),
+        400px 12px 0 -3px rgba(255, 255, 255, 0.9),
+        560px 16px 0 -1px rgba(255, 255, 255, 0.85),
+        710px 20px 0 -4px rgba(255, 255, 255, 0.7),
+        850px 14px 0 -2px rgba(255, 255, 255, 0.75);
+}
+
+.cap-spots::after {
+    width: 14px;
+    height: 14px;
+    top: 55%;
+    left: 8%;
+    box-shadow: 
+        180px -8px 0 -1px white,
+        350px 5px 0 -3px white,
+        510px -10px 0 1px white,
+        650px 2px 0 -2px white,
+        800px -5px 0 0px white,
+        950px 8px 0 -4px white,
+        1100px -3px 0 -1px white,
+        270px 3px 0 -5px rgba(255, 255, 255, 0.8),
+        430px -6px 0 -2px rgba(255, 255, 255, 0.9),
+        590px 4px 0 0px rgba(255, 255, 255, 0.85);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    background: linear-gradient(180deg, #E8DCC8 0%, #D4B896 100%);
+    padding: 120px 40px 100px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #3D3744;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: #A94442;
+    font-weight: 500;
+}
+
+/* ============================================
+   GILLS SECTION - About
+   ============================================ */
+
+.gills {
+    background: linear-gradient(180deg, #D4B896 0%, #C4A882 50%, #B49870 100%);
+    padding: 100px 40px;
+}
+
+.gills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3D3744;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gills-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.gills-content p {
+    font-size: 1.15rem;
+    color: #3D3744;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.gills-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   STEM SECTION - Skills
+   ============================================ */
+.stem {
+    background: linear-gradient(180deg, #B49870 0%, #A94442 50%, #8B3634 100%);
+    padding: 100px 40px;
+}
+
+.stem h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-10px);
+}
+
+.skill-category h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 15px;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    color: #E8DCC8;
+    font-size: 1.05rem;
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.skill-category li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* ============================================
+   MYCELIUM SECTION - Projects
+   ============================================ */
+.mycelium {
+    background: linear-gradient(180deg, #3D3744 0%, #2C5F5D 50%, #1F4644 100%);
+    padding: 100px 40px;
+    position: relative; 
+    overflow: hidden;
+}
+
+/* Spore particle effect */
+.spores {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: 
+        radial-gradient(circle, rgba(127, 164, 152, 0.4) 2px, transparent 2px),
+        radial-gradient(circle, rgba(127, 164, 152, 0.3) 3px, transparent 3px),
+        radial-gradient(circle, rgba(127, 164, 152, 0.5) 1px, transparent 1px),
+        radial-gradient(circle, rgba(127, 164, 152, 0.2) 2px, transparent 2px),
+        radial-gradient(circle, rgba(127, 164, 152, 0.4) 2px, transparent 2px),
+        radial-gradient(circle, rgba(127, 164, 152, 0.3) 1px, transparent 1px);
+    background-size: 200px 200px, 300px 300px, 250px 250px, 350px 350px, 180px 180px, 280px 280px;
+    background-position: 0 0, 50px 60px, 100px 20px, 150px 80px, 200px 40px, 250px 100px;
+    animation: sporeFloat 20s infinite linear;
+}
+
+@keyframes sporeFloat {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.mycelium h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #7FA498;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: rgba(127, 164, 152, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(127, 164, 152, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.project-card h3 {
+    color: #7FA498;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    color: #A94442;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.project-description {
+    color: #E8DCC8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.project-image {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* ============================================
+   FOOTER - Contact
+   ============================================ */
+.footer {
+    background: linear-gradient(180deg, #1F4644 0%, #7FA498 100%);
+    padding: 80px 40px 40px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-info {
+    margin-bottom: 50px;
+}
+
+.contact-info p {
+    color: #E8DCC8;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #E8DCC8;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: white;
+    border-bottom-color: white;
+}
+
+.back-to-top {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.back-to-top:hover {
+    background-color: white;
+    color: #1F4644;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyright p {
+    color: rgba(232, 220, 200, 0.8);
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   SMOOTH SCROLL ENHANCEMENTS
+   ============================================ */
+section { 
+    scroll-margin-top: 80px;
+}
